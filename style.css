@@ -1,0 +1,126 @@
+button{
+    border: none;
+}
+ul, li{
+    list-style: none;
+}
+/* 햄버거 메뉴 */
+.side-menu{
+    /* display: none; */
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #bcbcbc;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* padding: 30px; */
+}
+.icon-button{
+    opacity: 0;
+}
+.closeBtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.side-menu-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+}
+.side-menu-list button{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #bcbcbc;
+    transition: 0.3s;
+}
+
+.side-menu-list button:hover{
+    background-color: #ebebeb;
+}
+
+.search>button{
+    background-color: #fff;
+}
+
+
+.head-line{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.head-line svg{
+    width: 430px;
+}
+.menus{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* 밖으로 안삐져나가게 메뉴를 */
+    border-top: 1px solid #ebebeb;
+    border-bottom: 4px double #000;
+}
+
+.menus button{
+    border: none;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.menus button:hover{
+    background-color: #f5f5f5;
+}
+
+.news-img-size{
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.news{
+    border-bottom: 2px solid #000;
+}
+
+#input-area{
+    display: none;
+    /* transition: ease; */
+}
+
+@media screen and (max-width:825px) {
+    .menus{
+        display: none;
+    }
+    .icon-button{
+        opacity: 1;
+        cursor: pointer;
+    }
+    .search>button{
+        position:absolute;
+        top:0;
+        left: 25px;
+        background-color: #fff;
+    }
+    .icon-button{
+        font-size: 20px;
+    }
+    #search-input{
+        width: 160px;
+        height: 20px;
+    }
+    .search-btn{
+        font-weight: bold;
+        border: 1px solid #000;
+        /* width: 28px;
+        height: 20px; */
+        text-align: center;
+        font-size: 12px;
+    }
+    #input-area{
+        overflow: hidden;
+    }
+}
