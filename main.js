@@ -16,7 +16,7 @@ let url;
 const getNews=async()=>{
     try{
         let header = new Headers({
-            'x-api-key':'m5ZeijClFPNkczjTVtzMSaVAhDWUSOAnMQttBhPEWU4'
+            'x-api-key':'ZKp89C5uoD0qNL7Kev26a2FWB_bkWVpBdy5SDBt76NI'
         });
         url.searchParams.set('page',page);//페이지를 따오기위함
         let response = await fetch(url,{headers: header});
